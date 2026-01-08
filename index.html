@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Controle de Evasão Escolar</title>
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+<body>
+
+<header>
+    <h1>📊 Controle de Evasão Escolar</h1>
+    <p>Acompanhamento pedagógico de frequência</p>
+</header>
+
+<main>
+
+<section class="card">
+    <h2>🏫 Dados da Turma</h2>
+    <input type="text" id="turma" placeholder="Nome da Turma">
+    <input type="text" id="professor" placeholder="Nome do Professor">
+    <input type="email" id="email" placeholder="E-mail para envio do relatório">
+</section>
+
+<section class="card">
+    <h2>👩‍🎓 Cadastro de Alunos</h2>
+    <input type="text" id="nomeAluno" placeholder="Nome do Aluno">
+    <button onclick="adicionarAluno()">Adicionar Aluno</button>
+</section>
+
+<section class="card">
+    <h2>📋 Frequência</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Aluno</th>
+                <th>Faltas</th>
+                <th>Justificativa</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="listaAlunos"></tbody>
+    </table>
+</section>
+
+<section class="card">
+    <h2>📤 Relatórios</h2>
+    <button onclick="gerarRelatorio('Semanal')">📅 Relatório Semanal</button>
+    <button onclick="gerarRelatorio('Mensal')">🗓️ Relatório Mensal</button>
+</section>
+
+</main>
+
+<footer>
+    <p>Sistema de Controle de Evasão • Uso Educacional</p>
+</footer>
+
+<script src="JS/index.js"></script>
+</body>
+</html>
+
